@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		280760791B638DA3004A9C28 /* Plists in Resources */ = {isa = PBXBuildFile; fileRef = 280760781B638DA3004A9C28 /* Plists */; };
 		2807607C1B638DE4004A9C28 /* TravComp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2807607A1B638DE4004A9C28 /* TravComp.xcdatamodeld */; };
+		2807607E1B638FD4004A9C28 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2807607D1B638FD4004A9C28 /* HomeViewController.swift */; };
+		280760801B638FE4004A9C28 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2807607F1B638FE4004A9C28 /* MapViewController.swift */; };
 		286AF8361B6375B1005407CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286AF8351B6375B1005407CB /* AppDelegate.swift */; };
-		286AF83B1B6375B1005407CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286AF83A1B6375B1005407CB /* ViewController.swift */; };
 		286AF83E1B6375B1005407CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286AF83C1B6375B1005407CB /* Main.storyboard */; };
 		286AF8401B6375B1005407CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 286AF83F1B6375B1005407CB /* Images.xcassets */; };
 		286AF8431B6375B1005407CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286AF8411B6375B1005407CB /* LaunchScreen.xib */; };
@@ -33,9 +34,10 @@
 		280760771B638CAC004A9C28 /* TravComp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravComp-Bridging-Header.h"; sourceTree = "<group>"; };
 		280760781B638DA3004A9C28 /* Plists */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Plists; sourceTree = "<group>"; };
 		2807607B1B638DE4004A9C28 /* TravComp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TravComp.xcdatamodel; sourceTree = "<group>"; };
+		2807607D1B638FD4004A9C28 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2807607F1B638FE4004A9C28 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		286AF8301B6375B1005407CB /* TravComp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravComp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		286AF8351B6375B1005407CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		286AF83A1B6375B1005407CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		286AF83D1B6375B1005407CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		286AF83F1B6375B1005407CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		286AF8421B6375B1005407CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -76,7 +78,8 @@
 		2807606C1B638919004A9C28 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				286AF83A1B6375B1005407CB /* ViewController.swift */,
+				2807607D1B638FD4004A9C28 /* HomeViewController.swift */,
+				2807607F1B638FE4004A9C28 /* MapViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -358,9 +361,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				286AF83B1B6375B1005407CB /* ViewController.swift in Sources */,
 				286AF8361B6375B1005407CB /* AppDelegate.swift in Sources */,
 				2807607C1B638DE4004A9C28 /* TravComp.xcdatamodeld in Sources */,
+				280760801B638FE4004A9C28 /* MapViewController.swift in Sources */,
+				2807607E1B638FD4004A9C28 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
