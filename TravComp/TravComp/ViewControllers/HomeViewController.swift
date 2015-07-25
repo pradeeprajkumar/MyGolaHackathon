@@ -8,18 +8,58 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var destinationTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        self.initializeViewControllerSettings()
     }
     
+    func initializeViewControllerSettings () {
+
+        self.title = "Travel Companion"
+        self.destinationTextField.becomeFirstResponder()
+    }
 
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    // MARK: - Textfield delegates
+    func textFieldDidBeginEditing(textField: UITextField) {
+        
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+
+    }
+
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+
+        if (count(textField.text) > 0)
+        {
+            self.pushMapsViewController(textField.text)
+            return true
+        }
+        else
+        {
+            return false
+        }
+    }
+    
+    func pushMapsViewController (destinationLocation:String) {
+        
+        let mapViewControllerObejct = self.storyboard?.instantiateViewControllerWithIdentifier("MapViewControllerIdentifier") as? MapViewController
+        mapViewControllerObejct?.destinationLocation = destinationLocation
+        self.navigationController?.pushViewController(mapViewControllerObejct!, animated: true)
+
     }
     
 

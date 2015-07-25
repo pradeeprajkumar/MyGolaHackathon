@@ -15,13 +15,84 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EvW-Mf-5BO" userLabel="InputView">
+                                <rect key="frame" x="20" y="89" width="560" height="159"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJm-tZ-akW">
+                                        <rect key="frame" x="20" y="69" width="103" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="103" id="6na-kb-nDm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E.g: Mangalore" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U1g-nT-BlS">
+                                        <rect key="frame" x="361" y="65" width="177" height="30"/>
+                                        <color key="backgroundColor" red="0.96497224506578949" green="0.98226768092105265" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="177" id="aRq-Re-puO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="atA-5A-ngU"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94980982730263153" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="U1g-nT-BlS" firstAttribute="top" secondItem="EvW-Mf-5BO" secondAttribute="top" constant="65" id="1bU-YK-TnP"/>
+                                    <constraint firstAttribute="bottom" secondItem="U1g-nT-BlS" secondAttribute="bottom" constant="64" id="XNv-4W-u6u"/>
+                                    <constraint firstItem="FJm-tZ-akW" firstAttribute="top" secondItem="EvW-Mf-5BO" secondAttribute="top" constant="69" id="bVZ-TF-OZ7"/>
+                                    <constraint firstItem="FJm-tZ-akW" firstAttribute="leading" secondItem="EvW-Mf-5BO" secondAttribute="leading" constant="20" id="cHy-Iy-giF"/>
+                                    <constraint firstAttribute="trailing" secondItem="U1g-nT-BlS" secondAttribute="trailing" constant="22" id="oeL-Pa-WDW"/>
+                                    <constraint firstAttribute="bottom" secondItem="FJm-tZ-akW" secondAttribute="bottom" constant="69" id="vYK-YI-C3Y"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Dbb-iZ-Pig">
+                                <rect key="frame" x="255" y="256" width="90" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.7725490196" green="0.79607843140000001" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EvW-Mf-5BO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="2Hf-J2-T44"/>
+                            <constraint firstAttribute="trailing" secondItem="Dbb-iZ-Pig" secondAttribute="trailing" constant="255" id="DGr-Tv-s6X"/>
+                            <constraint firstAttribute="bottom" secondItem="Dbb-iZ-Pig" secondAttribute="bottom" constant="284" id="FiT-wV-CNr"/>
+                            <constraint firstAttribute="trailing" secondItem="EvW-Mf-5BO" secondAttribute="trailing" constant="20" id="Vlp-lI-O4b"/>
+                            <constraint firstItem="EvW-Mf-5BO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="89" id="m9E-TL-BN4"/>
+                            <constraint firstItem="Dbb-iZ-Pig" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="256" id="uVT-Vf-M0x"/>
+                            <constraint firstItem="Dbb-iZ-Pig" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="255" id="x3q-je-uTI"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NQI-lu-gh7"/>
+                    <connections>
+                        <outlet property="destinationTextField" destination="U1g-nT-BlS" id="tDf-NQ-ccc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1121" y="387"/>
+            <point key="canvasLocation" x="1028" y="-306"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="KMw-KQ-BLw">
+            <objects>
+                <viewController storyboardIdentifier="MapViewControllerIdentifier" id="Gdx-Fg-EvD" customClass="MapViewController" customModule="TravComp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6vI-I6-g0u"/>
+                        <viewControllerLayoutGuide type="bottom" id="aZb-SG-jrZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DdW-rp-Fgp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WcI-f8-7Ex" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1752" y="-306"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pac-sQ-PJL">
@@ -31,7 +102,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pte-P8-zQN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.098039215686274508" green="0.68235294117647061" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.098039215690000001" green="0.68235294120000001" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -46,4 +117,7 @@
             <point key="canvasLocation" x="313" y="-306"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AppLogo" width="60" height="60"/>
+    </resources>
 </document>

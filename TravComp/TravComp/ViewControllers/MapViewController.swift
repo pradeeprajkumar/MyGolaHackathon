@@ -10,6 +10,8 @@ import UIKit
 
 class MapViewController: UIViewController {
 
+    var destinationLocation: String = "Destination"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initializeViewControllerSettings()
@@ -17,7 +19,7 @@ class MapViewController: UIViewController {
 
     func initializeViewControllerSettings () {
         
-        self.title = "TravComp"
+        self.title = destinationLocation
         self.initializeMapView()
     }
     
