@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280760791B638DA3004A9C28 /* Plists in Resources */ = {isa = PBXBuildFile; fileRef = 280760781B638DA3004A9C28 /* Plists */; };
+		2807607C1B638DE4004A9C28 /* TravComp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2807607A1B638DE4004A9C28 /* TravComp.xcdatamodeld */; };
 		286AF8361B6375B1005407CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286AF8351B6375B1005407CB /* AppDelegate.swift */; };
-		286AF8391B6375B1005407CB /* TravComp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 286AF8371B6375B1005407CB /* TravComp.xcdatamodeld */; };
 		286AF83B1B6375B1005407CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286AF83A1B6375B1005407CB /* ViewController.swift */; };
 		286AF83E1B6375B1005407CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286AF83C1B6375B1005407CB /* Main.storyboard */; };
 		286AF8401B6375B1005407CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 286AF83F1B6375B1005407CB /* Images.xcassets */; };
@@ -29,10 +30,11 @@
 
 /* Begin PBXFileReference section */
 		103A186B94F1500C97F04931 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		280760771B638CAC004A9C28 /* TravComp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravComp-Bridging-Header.h"; sourceTree = "<group>"; };
+		280760781B638DA3004A9C28 /* Plists */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Plists; sourceTree = "<group>"; };
+		2807607B1B638DE4004A9C28 /* TravComp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TravComp.xcdatamodel; sourceTree = "<group>"; };
 		286AF8301B6375B1005407CB /* TravComp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravComp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		286AF8341B6375B1005407CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		286AF8351B6375B1005407CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		286AF8381B6375B1005407CB /* TravComp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TravComp.xcdatamodel; sourceTree = "<group>"; };
 		286AF83A1B6375B1005407CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		286AF83D1B6375B1005407CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		286AF83F1B6375B1005407CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -63,6 +65,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2807606B1B638911004A9C28 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				286AF8351B6375B1005407CB /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2807606C1B638919004A9C28 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				286AF83A1B6375B1005407CB /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2807606D1B63892A004A9C28 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				280760781B638DA3004A9C28 /* Plists */,
+				280760761B638C07004A9C28 /* Pch */,
+				2807606F1B63893F004A9C28 /* Storyboard */,
+				2807606E1B638931004A9C28 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2807606E1B638931004A9C28 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				286AF83F1B6375B1005407CB /* Images.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		2807606F1B63893F004A9C28 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				286AF83C1B6375B1005407CB /* Main.storyboard */,
+				286AF8411B6375B1005407CB /* LaunchScreen.xib */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		280760701B63894A004A9C28 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				280760711B638986004A9C28 /* Models */,
+				2807607A1B638DE4004A9C28 /* TravComp.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		280760711B638986004A9C28 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		280760731B6389AB004A9C28 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				280760751B6389B9004A9C28 /* Subclasses */,
+				280760741B6389B1004A9C28 /* Categories */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		280760741B6389B1004A9C28 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		280760751B6389B9004A9C28 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subclasses;
+			sourceTree = "<group>";
+		};
+		280760761B638C07004A9C28 /* Pch */ = {
+			isa = PBXGroup;
+			children = (
+				280760771B638CAC004A9C28 /* TravComp-Bridging-Header.h */,
+			);
+			path = Pch;
+			sourceTree = "<group>";
+		};
 		286AF8271B6375B1005407CB = {
 			isa = PBXGroup;
 			children = (
@@ -86,23 +179,13 @@
 		286AF8321B6375B1005407CB /* TravComp */ = {
 			isa = PBXGroup;
 			children = (
-				286AF8351B6375B1005407CB /* AppDelegate.swift */,
-				286AF83A1B6375B1005407CB /* ViewController.swift */,
-				286AF83C1B6375B1005407CB /* Main.storyboard */,
-				286AF83F1B6375B1005407CB /* Images.xcassets */,
-				286AF8411B6375B1005407CB /* LaunchScreen.xib */,
-				286AF8371B6375B1005407CB /* TravComp.xcdatamodeld */,
-				286AF8331B6375B1005407CB /* Supporting Files */,
+				280760731B6389AB004A9C28 /* Utilities */,
+				2807606B1B638911004A9C28 /* AppDelegate */,
+				280760701B63894A004A9C28 /* CoreData */,
+				2807606D1B63892A004A9C28 /* Resources */,
+				2807606C1B638919004A9C28 /* ViewControllers */,
 			);
 			path = TravComp;
-			sourceTree = "<group>";
-		};
-		286AF8331B6375B1005407CB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				286AF8341B6375B1005407CB /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		286AF84B1B6375B1005407CB /* TravCompTests */ = {
@@ -222,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				286AF83E1B6375B1005407CB /* Main.storyboard in Resources */,
+				280760791B638DA3004A9C28 /* Plists in Resources */,
 				286AF8431B6375B1005407CB /* LaunchScreen.xib in Resources */,
 				286AF8401B6375B1005407CB /* Images.xcassets in Resources */,
 			);
@@ -276,7 +360,7 @@
 			files = (
 				286AF83B1B6375B1005407CB /* ViewController.swift in Sources */,
 				286AF8361B6375B1005407CB /* AppDelegate.swift in Sources */,
-				286AF8391B6375B1005407CB /* TravComp.xcdatamodeld in Sources */,
+				2807607C1B638DE4004A9C28 /* TravComp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,9 +490,10 @@
 			baseConfigurationReference = F5DEF6F86DFE4A57119AB77F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TravComp/Info.plist;
+				INFOPLIST_FILE = TravComp/Resources/Plists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TravComp/Resources/Pch/TravComp-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -417,9 +502,10 @@
 			baseConfigurationReference = 103A186B94F1500C97F04931 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TravComp/Info.plist;
+				INFOPLIST_FILE = TravComp/Resources/Plists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TravComp/Resources/Pch/TravComp-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -490,12 +576,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		286AF8371B6375B1005407CB /* TravComp.xcdatamodeld */ = {
+		2807607A1B638DE4004A9C28 /* TravComp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				286AF8381B6375B1005407CB /* TravComp.xcdatamodel */,
+				2807607B1B638DE4004A9C28 /* TravComp.xcdatamodel */,
 			);
-			currentVersion = 286AF8381B6375B1005407CB /* TravComp.xcdatamodel */;
+			currentVersion = 2807607B1B638DE4004A9C28 /* TravComp.xcdatamodel */;
 			path = TravComp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
