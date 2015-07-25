@@ -112,7 +112,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     //MARK: - Local methods
     func initializeProjectSettings () {
-    
+
         GMSServices.provideAPIKey("AIzaSyDXoIfFGPHJaJm_UCI3D26kSQoACI5kE94")
     }
 }

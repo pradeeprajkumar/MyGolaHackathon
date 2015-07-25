@@ -11,6 +11,8 @@
 		2807607C1B638DE4004A9C28 /* TravComp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2807607A1B638DE4004A9C28 /* TravComp.xcdatamodeld */; };
 		2807607E1B638FD4004A9C28 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2807607D1B638FD4004A9C28 /* HomeViewController.swift */; };
 		280760801B638FE4004A9C28 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2807607F1B638FE4004A9C28 /* MapViewController.swift */; };
+		280760821B63ABD8004A9C28 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280760811B63ABD8004A9C28 /* CoreLocation.framework */; };
+		285402451B63D3DB0014E563 /* MapsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285402441B63D3DB0014E563 /* MapsManager.swift */; };
 		286AF8361B6375B1005407CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286AF8351B6375B1005407CB /* AppDelegate.swift */; };
 		286AF83E1B6375B1005407CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286AF83C1B6375B1005407CB /* Main.storyboard */; };
 		286AF8401B6375B1005407CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 286AF83F1B6375B1005407CB /* Images.xcassets */; };
@@ -36,6 +38,8 @@
 		2807607B1B638DE4004A9C28 /* TravComp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TravComp.xcdatamodel; sourceTree = "<group>"; };
 		2807607D1B638FD4004A9C28 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2807607F1B638FE4004A9C28 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		280760811B63ABD8004A9C28 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		285402441B63D3DB0014E563 /* MapsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapsManager.swift; path = MapsManager/MapsManager.swift; sourceTree = "<group>"; };
 		286AF8301B6375B1005407CB /* TravComp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravComp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		286AF8351B6375B1005407CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		286AF83D1B6375B1005407CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280760821B63ABD8004A9C28 /* CoreLocation.framework in Frameworks */,
 				C130A08F129FD370B6C47745 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +164,14 @@
 			path = Pch;
 			sourceTree = "<group>";
 		};
+		285402431B63D3B90014E563 /* MapsManager */ = {
+			isa = PBXGroup;
+			children = (
+				285402441B63D3DB0014E563 /* MapsManager.swift */,
+			);
+			name = MapsManager;
+			sourceTree = "<group>";
+		};
 		286AF8271B6375B1005407CB = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +195,7 @@
 		286AF8321B6375B1005407CB /* TravComp */ = {
 			isa = PBXGroup;
 			children = (
+				285402431B63D3B90014E563 /* MapsManager */,
 				280760731B6389AB004A9C28 /* Utilities */,
 				2807606B1B638911004A9C28 /* AppDelegate */,
 				280760701B63894A004A9C28 /* CoreData */,
@@ -211,6 +225,7 @@
 		31C66FCC1ACCA1130B7A241B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				280760811B63ABD8004A9C28 /* CoreLocation.framework */,
 				6E3C06C795D153E4E4353A17 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -364,6 +379,7 @@
 				286AF8361B6375B1005407CB /* AppDelegate.swift in Sources */,
 				2807607C1B638DE4004A9C28 /* TravComp.xcdatamodeld in Sources */,
 				280760801B638FE4004A9C28 /* MapViewController.swift in Sources */,
+				285402451B63D3DB0014E563 /* MapsManager.swift in Sources */,
 				2807607E1B638FD4004A9C28 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
